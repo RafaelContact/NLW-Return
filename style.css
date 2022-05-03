@@ -1,3 +1,11 @@
+:root{
+    font-size: 62.5%;
+    /* o tamanho de fonte padrão é 16px que é igual a 1 rem, aqui fiz a alteração na root */
+}
 body{
     font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+}
+h4 {
+    font-size: 14px;
 }
