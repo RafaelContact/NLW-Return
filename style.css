@@ -166,5 +166,13 @@ nav .wrapper {
 }
 nav.scroll {
     background-color: var(--primary-color);
+    width: 100vw;
 
+}
+
+nav.scroll svg:nth-child(1) path{
+    fill: white
+}
+nav.scroll svg:nth-child(2) path{
+    stroke: white;
 }
