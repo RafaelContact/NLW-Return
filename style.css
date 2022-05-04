@@ -1,7 +1,9 @@
 /* GERAL====================*/
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
 :root{
     --primary-color: hsl(170, 100%, 26%);
@@ -32,7 +34,9 @@ body{
     margin-left: auto;
     padding-inline: 2.4rem;
 }
-
+ul{
+    list-style: none;
+}
 
 /* HEADER =====================*/
 
@@ -178,4 +182,37 @@ nav.scroll svg:nth-child(1) path{
 }
 nav.scroll svg:nth-child(2) path{
     stroke: white;
+}
+
+/*============= menu-expanded ===============*/
+body.menu-expanded{ 
+    overflow: hidden;
+}
+
+.menu, 
+ .close-menu,
+ body.menu-expanded .open-menu{
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.menu-expanded .menu, 
+body.menu-expanded .close-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+body.menu-expanded .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+
+    width: 100vw;
+    height: 100vh;
+
+}
+body.menu-expanded nav{ 
+    position: relative;
 }
