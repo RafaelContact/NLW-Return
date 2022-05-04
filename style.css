@@ -160,12 +160,7 @@ nav{
     left: 50%;
     transform: translate(-50%);
 }
- /* nav.weapper {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
+nav.scroll {
+    background-color: var(--primary-color);
+
 }
-nav.scroll{
-     background: var(--primary-color); 
-    width: 100vw ;
-} */
