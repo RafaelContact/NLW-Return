@@ -10,9 +10,11 @@
 
     --brand-beige: hsl(39,100%, 97%);
     --brand-light: hsl(148, 23%, 89%);
-    --nav-heigh:7.3rem ;
+
     font-size: 62.5%;
     /* o tamanho de fonte padrão é 16px que é igual a 1 rem, aqui fiz a alteração na root */
+    
+    --nav-heigh:7.2rem ;
 }
 
 body{
@@ -27,7 +29,17 @@ body{
     margin-left: auto;
     padding-inline: 2.4rem;
 }
+
+
 /* HEADER =====================*/
+
+
+header{
+    
+    margin-top: calc(4.1rem + var(--nav-heigh)); 
+     
+
+}
 header::before{
     content:"";
     width: 100vw;
@@ -42,15 +54,7 @@ header::before{
 
 
 }
-header{
-    
-    margin-top: calc (4.1rem + var(--nav-heigh)); 
-    
 
-    padding-right: 2rem;
-    padding-left: 2rem;
-
-}
 header > h4 {
     font-size: 1.4em;
     color: var(--primary-color);
@@ -137,20 +141,22 @@ header img{
     font-size:  1.6rem;
     line-height: 150%;
 }
+
+
 /*NAVIGATION ============ */
+
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    height: var(--nav-heigh);
-
-    padding: 1.6rem 2.4rem;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -00%);
+}
+/* nav.weapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 nav.scroll{
-    background: var(--primary-color);
-}
+    /* background: var(--primary-color); 
+    width: 100vw ;
+} 
