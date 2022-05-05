@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Coctor care</title>
 </head>
 <body onscroll="onScroll()" class="">
-    <nav id="navigation" class="scroll">
+    <nav id="navigation" class="">
         <div class="wrapper">
             <a href="#" class="logo">
                 <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,6 +70,8 @@
             </div>
 
             <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
             onclick="openMenu()"
             class="open-menu">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,6 +81,8 @@
                 </svg>
             </button>
             <button 
+            aria-expanded="true"
+            aria-label="Fechar menu"
             onclick="closeMenu()"
             class="close-menu">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,6 +128,14 @@
     </div>
 </div>
 </header>
+<section id="services">
+    <div class="wrapper">
+        <header>
+            <h4>Serviços</h4>
+            <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+        </header>
+    </div>
+</section>
 <script src="main.js"></script>
 </body>
 </html>
